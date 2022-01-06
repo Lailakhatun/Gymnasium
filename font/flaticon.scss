@@ -1,0 +1,57 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?25118e5011d7e8dc4464ed13547a7954") format("truetype"),
+url("./flaticon.woff?25118e5011d7e8dc4464ed13547a7954") format("woff"),
+url("./flaticon.woff2?25118e5011d7e8dc4464ed13547a7954") format("woff2"),
+url("./flaticon.eot?25118e5011d7e8dc4464ed13547a7954#iefix") format("embedded-opentype"),
+url("./flaticon.svg?25118e5011d7e8dc4464ed13547a7954#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "treadmill": "\f101",
+    "training": "\f102",
+    "bicycle": "\f103",
+    "skipping-rope": "\f104",
+    "buddhist-yoga-pose": "\f105",
+    "man-boxing": "\f106",
+    "dumbbell-lifter": "\f107",
+    "running-stick-figure": "\f108",
+);
+
+.flaticon-treadmill:before {
+    content: map-get($flaticon-map, "treadmill");
+}
+.flaticon-training:before {
+    content: map-get($flaticon-map, "training");
+}
+.flaticon-bicycle:before {
+    content: map-get($flaticon-map, "bicycle");
+}
+.flaticon-skipping-rope:before {
+    content: map-get($flaticon-map, "skipping-rope");
+}
+.flaticon-buddhist-yoga-pose:before {
+    content: map-get($flaticon-map, "buddhist-yoga-pose");
+}
+.flaticon-man-boxing:before {
+    content: map-get($flaticon-map, "man-boxing");
+}
+.flaticon-dumbbell-lifter:before {
+    content: map-get($flaticon-map, "dumbbell-lifter");
+}
+.flaticon-running-stick-figure:before {
+    content: map-get($flaticon-map, "running-stick-figure");
+}
